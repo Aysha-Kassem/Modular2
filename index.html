@@ -214,6 +214,9 @@
     </footer>
     <script>
         window.addEventListener("scroll", () => {
+            if (this.scrollY < 1000){
+                document.querySelector(".centered_item5").style.display = "non";
+            }
             if (this.scrollY > 1000){
                 document.querySelector(".centered_item5").style.display = "block";
             }
